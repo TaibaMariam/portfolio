@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tayyaba Mariam | Emerging Chef</title>
+  <meta name="description" content="Portfolio of Tayyaba Mariam — culinary training, daily service experience, and selected dishes."/>
+  <style>:root{
+  --bg:#F7F4EF;
+  --ink:#2E2E2E;
+  --olive:#6B8E23;
+  --tomato:#C0392B;
+  --card:#FFFFFF;
+  --muted:#6b6b6b;
+  --shadow: 0 10px 30px rgba(0,0,0,.08);
+  --radius: 18px;
+  --max: 1100px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial; color:var(--ink); background:var(--bg);}
+a{color:inherit}
+.container{max-width:var(--max); margin:0 auto; padding:24px;}
+.nav{position:sticky; top:0; z-index:10; background:rgba(247,244,239,.8); backdrop-filter: blur(10px); border-bottom:1px solid rgba(0,0,0,.06);}
+.nav-inner{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 24px; max-width:var(--max); margin:0 auto;}
+.brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.4px;}
+.badge{font-size:12px; padding:6px 10px; border-radius:999px; background:rgba(107,142,35,.12); color:var(--olive); font-weight:600;}
+.links{display:flex; gap:14px; flex-wrap:wrap; font-size:14px;}
+.links a{opacity:.85; text-decoration:none;}
+.links a:hover{opacity:1; text-decoration:underline;}
+.hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:22px; align-items:stretch; margin-top:10px;}
+.card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px;}
+.h-title{font-size:42px; line-height:1.05; margin:0 0 10px;}
+.h-sub{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:0 0 14px; color:var(--muted);}
+.p{margin:0; color:var(--ink); opacity:.92; line-height:1.55;}
+.kpi{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px; margin-top:16px;}
+.kpi .pill{border-radius:14px; padding:12px; background:rgba(0,0,0,.03);}
+.kpi .pill b{display:block; margin-bottom:6px;}
+.profile{display:grid; grid-template-rows: 1fr auto; overflow:hidden; padding:0;}
+.profile img{width:100%; height:100%; object-fit:cover; display:block;}
+.profile .overlay{padding:16px 18px; border-top:1px solid rgba(0,0,0,.06); background:rgba(255,255,255,.75); backdrop-filter: blur(10px);}
+.section{margin-top:26px;}
+.section h2{margin:0 0 10px; font-size:22px;}
+.grid{display:grid; grid-template-columns:repeat(12,1fr); gap:14px;}
+.col-7{grid-column:span 7;}
+.col-5{grid-column:span 5;}
+.list{margin:10px 0 0; padding:0; list-style:none;}
+.list li{margin:8px 0; opacity:.92; line-height:1.5;}
+.small{font-size:13px; color:var(--muted);}
+hr.sep{border:none; border-top:1px solid rgba(0,0,0,.08); margin:18px 0;}
+.filters{display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 16px;}
+.btn{border:1px solid rgba(0,0,0,.12); background:#fff; padding:8px 12px; border-radius:999px; cursor:pointer; font-size:13px;}
+.btn.active{border-color:rgba(107,142,35,.45); background:rgba(107,142,35,.10); color:var(--olive); font-weight:600;}
+.gallery{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:12px;}
+.tile{border-radius:16px; overflow:hidden; background:#fff; box-shadow: 0 10px 25px rgba(0,0,0,.06); cursor:pointer;}
+.tile img{width:100%; height:220px; object-fit:cover; display:block;}
+.tile .cap{padding:10px 12px; border-top:1px solid rgba(0,0,0,.06);}
+.tile .cap b{display:block; font-size:13px; margin-bottom:2px;}
+.tile .cap span{display:block; font-size:12px; color:var(--muted);}
+.footer{margin:30px 0 10px; padding:18px 0; color:var(--muted); font-size:13px;}
+.lightbox{position:fixed; inset:0; background:rgba(0,0,0,.75); display:none; align-items:center; justify-content:center; padding:22px; z-index:50;}
+.lightbox.open{display:flex;}
+.lightbox .panel{max-width:1000px; width:100%; background:#111; border-radius:18px; overflow:hidden;}
+.lightbox img{width:100%; height:auto; display:block;}
+.lightbox .meta{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 14px; color:#f2f2f2; background:#111;}
+.lightbox .meta .x{cursor:pointer; padding:6px 10px; border-radius:10px; background:rgba(255,255,255,.10);}
+@media (max-width: 900px){
+  .hero{grid-template-columns:1fr;}
+  .gallery{grid-template-columns:repeat(2, minmax(0,1fr));}
+  .col-7,.col-5{grid-column:span 12;}
+  .h-title{font-size:34px;}
+}
+@media (max-width: 520px){
+  .gallery{grid-template-columns:1fr;}
+  .tile img{height:210px;}
+}</style>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span>Tayyaba Mariam</span>
+        <span class="badge">Emerging Chef</span>
+      </div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Selected Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero" id="about">
+      <div class="card">
+        <h1 class="h-title">Food. Service. Growth.</h1>
+        <div class="h-sub">
+          <span>Lisbon, Portugal</span><span>•</span>
+          <span>Daily Service Experience</span><span>•</span>
+          <span>Culinary Arts Training</span>
+        </div>
+        <p class="p"><i>I work in professional kitchens, learning through daily service, repetition, and discipline. I am building my path toward becoming a confident chef with strong foundations in both back of house and service awareness.</i></p>
+
+        <div class="kpi">
+          <div class="pill"><b>Daily Service</b><span class="small">Soups · rice & legumes · seafood · cold starters</span></div>
+          <div class="pill"><b>Portuguese Foundations</b><span class="small">Bacalhau · Polvo · traditional soups</span></div>
+          <div class="pill"><b>Desserts & Baking</b><span class="small">Chocolate tart · banana cake · açaí desserts</span></div>
+          <div class="pill"><b>Kitchen Rhythm</b><span class="small">Mise en place · service pace · clean stations · teamwork</span></div>
+        </div>
+
+        <hr class="sep"/>
+        <div class="small"><b>Languages:</b> Urdu/Punjabi (Native) · English (Fluent C2) · Portuguese (A1, learning)</div>
+      </div>
+
+      <div class="card profile">
+        <img src="assets/images/cv-tayyaba.jpg" alt="Tayyaba Mariam profile photo"/>
+        <div class="overlay">
+          <div><b>Tayyaba Mariam</b></div>
+          <div class="small">Emerging Chef · Culinary Arts</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="experience">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="card col-7">
+          <b>Kitchen Assistant</b> <span class="small">— CAL Arrifana (Portugal) · Daily Service</span>
+          <ul class="list">
+            <li>Involved in daily professional kitchen operations and service.</li>
+            <li>Prepared dishes including soups, rice & legume dishes, seafood preparations, and cold starters.</li>
+            <li>Supported mise en place, portioning, and plating during service; maintained hygiene and service pace.</li>
+          </ul>
+        </div>
+        <div class="card col-5">
+          <b>Shift Manager</b> <span class="small">— Domino’s Pizza (UK) · High-volume food service</span>
+          <ul class="list">
+            <li>Worked in a fast-paced food service environment focused on speed, consistency, and accuracy.</li>
+            <li>Ensured hygiene, food safety, and cleanliness standards during service.</li>
+            <li>Coordinated tasks and service flow during busy periods.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="work">
+      <h2>Selected Work</h2>
+      <div class="small">All dishes shown were prepared by me during daily restaurant service, formal culinary training, or special events.</div>
+
+      <div class="filters">
+        <button class="btn active" data-filter="all">All</button>
+        <button class="btn" data-filter="Daily Service">Daily Service</button>
+        <button class="btn" data-filter="Culinary Training">Culinary Training</button>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+      <div class="small" style="margin-top:10px;">Tip: click an image to view it larger.</div>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <div><b>Email:</b> <a href="mailto:tayyabamariam88@gmail.com">tayyabamariam88@gmail.com</a></div>
+        <div style="margin-top:6px;"><b>Phone:</b> <a href="tel:+351939383677">+351 939 383 677</a></div>
+        <div style="margin-top:6px;"><b>Location:</b> Lisbon, Portugal</div>
+        <div class="small" style="margin-top:10px;">Host this for free on GitHub Pages.</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2026 Tayyaba Mariam · Built for GitHub Pages
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <div class="panel">
+      <img id="lbImg" src="" alt=""/>
+      <div class="meta">
+        <div>
+          <div id="lbTitle" style="font-weight:700;"></div>
+          <div id="lbCtx" class="small" style="color:#cfcfcf;"></div>
+        </div>
+        <div class="x" id="lbClose">Close</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  window.__MANIFEST__ = [
+  {
+    "id": "serving-one-bite-dish-in-school",
+    "title": "serving one bite dish in school",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/serving-one-bite-dish-in-school.jpg",
+    "thumb": "assets/images/thumbs/serving-one-bite-dish-in-school.jpg"
+  },
+  {
+    "id": "school-serving-food-to-other-student-cooking-and-serving-as-part-of-learning",
+    "title": "school serving food to other student (cooking and serving as part of learning)",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/school-serving-food-to-other-student-cooking-and-serving-as-part-of-learning.jpg",
+    "thumb": "assets/images/thumbs/school-serving-food-to-other-student-cooking-and-serving-as-part-of-learning.jpg"
+  },
+  {
+    "id": "school-with-chef-rui-and-student-azura",
+    "title": "school with chef Rui and student Azura",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/school-with-chef-rui-and-student-azura.jpg",
+    "thumb": "assets/images/thumbs/school-with-chef-rui-and-student-azura.jpg"
+  },
+  {
+    "id": "international-food-even-in-school",
+    "title": "international food even in school",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/international-food-even-in-school.jpg",
+    "thumb": "assets/images/thumbs/international-food-even-in-school.jpg"
+  },
+  {
+    "id": "serving-various-dishes-at-restaurant",
+    "title": "serving various dishes at restaurant",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/serving-various-dishes-at-restaurant.jpg",
+    "thumb": "assets/images/thumbs/serving-various-dishes-at-restaurant.jpg"
+  },
+  {
+    "id": "fun-and-cooking-in-school",
+    "title": "fun and cooking in school",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/fun-and-cooking-in-school.jpg",
+    "thumb": "assets/images/thumbs/fun-and-cooking-in-school.jpg"
+  },
+  {
+    "id": "proud-presenting-h-mus-algarvio-algarvian-humus-chickpeas-sweet-potato-carrot-with-toasted",
+    "title": "proud presenting H\u00famus Algarvio (Algarvian Humus)(chickpeas, sweet potato, carrot with toasted bread and vegetable sticks)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/proud-presenting-h-mus-algarvio-algarvian-humus-chickpeas-sweet-potato-carrot-with-toasted.jpg",
+    "thumb": "assets/images/thumbs/proud-presenting-h-mus-algarvio-algarvian-humus-chickpeas-sweet-potato-carrot-with-toasted.jpg"
+  },
+  {
+    "id": "taking-some-heat-in-the-kitchen",
+    "title": "taking some heat in the kitchen",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/taking-some-heat-in-the-kitchen.jpg",
+    "thumb": "assets/images/thumbs/taking-some-heat-in-the-kitchen.jpg"
+  },
+  {
+    "id": "in-process-making-acai-in-restaurant-a-with-seasonal-fruit-honey-powder-milk-carob-crumble",
+    "title": "in process making acai in restaurant (\u00e7a\u00ed with seasonal fruit, honey, powder milk, carob crumble, peanut butter)2",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/in-process-making-acai-in-restaurant-a-with-seasonal-fruit-honey-powder-milk-carob-crumble.jpg",
+    "thumb": "assets/images/thumbs/in-process-making-acai-in-restaurant-a-with-seasonal-fruit-honey-powder-milk-carob-crumble.jpg"
+  },
+  {
+    "id": "in-process-making-acai-in-restaurant-a-with-seasonal-fruit-honey-powder-milk-carob-crumble",
+    "title": "in process making acai in restaurant (\u00e7a\u00ed with seasonal fruit, honey, powder milk, carob crumble, peanut butter)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/in-process-making-acai-in-restaurant-a-with-seasonal-fruit-honey-powder-milk-carob-crumble.jpg",
+    "thumb": "assets/images/thumbs/in-process-making-acai-in-restaurant-a-with-seasonal-fruit-honey-powder-milk-carob-crumble.jpg"
+  },
+  {
+    "id": "restaurant-desset-tarte-de-queijo-de-cabra-goat-cheesecake-with-red-fruits-ice-cream",
+    "title": "restaurant desset Tarte De Queijo De Cabra (Goat Cheesecake with Red Fruits Ice Cream)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/restaurant-desset-tarte-de-queijo-de-cabra-goat-cheesecake-with-red-fruits-ice-cream.jpg",
+    "thumb": "assets/images/thumbs/restaurant-desset-tarte-de-queijo-de-cabra-goat-cheesecake-with-red-fruits-ice-cream.jpg"
+  },
+  {
+    "id": "restaurant-dish-tiborna-de-bacalhau-codfish-toast",
+    "title": "restaurant dish Tiborna De Bacalhau (Codfish Toast)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/restaurant-dish-tiborna-de-bacalhau-codfish-toast.jpg",
+    "thumb": "assets/images/thumbs/restaurant-dish-tiborna-de-bacalhau-codfish-toast.jpg"
+  },
+  {
+    "id": "creme-de-batata-doce-gengibre-e-curcuma-sweet-potato-cream-ginger-and-curcuma",
+    "title": "Creme De Batata Doce Gengibre E Curcuma (Sweet Potato Cream Ginger And Curcuma)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/creme-de-batata-doce-gengibre-e-curcuma-sweet-potato-cream-ginger-and-curcuma.jpg",
+    "thumb": "assets/images/thumbs/creme-de-batata-doce-gengibre-e-curcuma-sweet-potato-cream-ginger-and-curcuma.jpg"
+  },
+  {
+    "id": "restaurant-dish-salada-de-folhas-verdes-queijo-da-ilha-fruta-frutos-secos-vinagre-de-laran",
+    "title": "restaurant dish Salada De Folhas Verdes, Queijo Da Ilha, Fruta, Frutos Secos, Vinagre De Laranja (Green Salad Azores Cheese, Fruit, Orange)",
+    "context": "Daily Service",
+    "tags": [
+      "daily-service",
+      "cold-starter"
+    ],
+    "full": "assets/images/restaurant-dish-salada-de-folhas-verdes-queijo-da-ilha-fruta-frutos-secos-vinagre-de-laran.jpg",
+    "thumb": "assets/images/thumbs/restaurant-dish-salada-de-folhas-verdes-queijo-da-ilha-fruta-frutos-secos-vinagre-de-laran.jpg"
+  },
+  {
+    "id": "signature-octopus-dish",
+    "title": "signature octopus dish ",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/signature-octopus-dish.jpg",
+    "thumb": "assets/images/thumbs/signature-octopus-dish.jpg"
+  },
+  {
+    "id": "final-result-humus",
+    "title": "final result humus",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/final-result-humus.jpg",
+    "thumb": "assets/images/thumbs/final-result-humus.jpg"
+  },
+  {
+    "id": "preparing-bacalhu",
+    "title": "preparing bacalhu",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/preparing-bacalhu.jpg",
+    "thumb": "assets/images/thumbs/preparing-bacalhu.jpg"
+  },
+  {
+    "id": "restaurant-dish-salteado-de-batata-doce-salted-sweet-potato-salad-with-spinach-peas",
+    "title": "restaurant dish Salteado De Batata Doce (Salted Sweet Potato Salad with Spinach, Peas)",
+    "context": "Daily Service",
+    "tags": [
+      "daily-service",
+      "cold-starter"
+    ],
+    "full": "assets/images/restaurant-dish-salteado-de-batata-doce-salted-sweet-potato-salad-with-spinach-peas.jpg",
+    "thumb": "assets/images/thumbs/restaurant-dish-salteado-de-batata-doce-salted-sweet-potato-salad-with-spinach-peas.jpg"
+  },
+  {
+    "id": "posted-from-restaurant-when-i-started-as-intern-in-the-restaurant",
+    "title": "posted from restaurant when i started as intern in the restaurant",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/posted-from-restaurant-when-i-started-as-intern-in-the-restaurant.jpg",
+    "thumb": "assets/images/thumbs/posted-from-restaurant-when-i-started-as-intern-in-the-restaurant.jpg"
+  },
+  {
+    "id": "dish-from-school-one-bite-dish",
+    "title": "dish from school one bite dish",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/dish-from-school-one-bite-dish.jpg",
+    "thumb": "assets/images/thumbs/dish-from-school-one-bite-dish.jpg"
+  },
+  {
+    "id": "dish-from-school-one-bite-dish",
+    "title": "dish from school_one_bite_dish",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/dish-from-school-one-bite-dish.jpg",
+    "thumb": "assets/images/thumbs/dish-from-school-one-bite-dish.jpg"
+  },
+  {
+    "id": "dish-from-school-dessert-3",
+    "title": "dish from school dessert 3",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/dish-from-school-dessert-3.jpg",
+    "thumb": "assets/images/thumbs/dish-from-school-dessert-3.jpg"
+  },
+  {
+    "id": "dish-from-school-soup",
+    "title": "dish from school soup",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/dish-from-school-soup.jpg",
+    "thumb": "assets/images/thumbs/dish-from-school-soup.jpg"
+  },
+  {
+    "id": "dish-from-school-desert-1",
+    "title": "dish from school desert 1",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/dish-from-school-desert-1.jpg",
+    "thumb": "assets/images/thumbs/dish-from-school-desert-1.jpg"
+  },
+  {
+    "id": "dish-from-school-dessert-2",
+    "title": "dish from school dessert 2",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/dish-from-school-dessert-2.jpg",
+    "thumb": "assets/images/thumbs/dish-from-school-dessert-2.jpg"
+  },
+  {
+    "id": "at-seminar-of-fresh-ingredients-plants",
+    "title": "at seminar of fresh ingredients (plants)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/at-seminar-of-fresh-ingredients-plants.jpg",
+    "thumb": "assets/images/thumbs/at-seminar-of-fresh-ingredients-plants.jpg"
+  },
+  {
+    "id": "dish-from-school-pastal-nata",
+    "title": "dish from school pastal nata",
+    "context": "Culinary Training",
+    "tags": [
+      "culinary-training"
+    ],
+    "full": "assets/images/dish-from-school-pastal-nata.jpg",
+    "thumb": "assets/images/thumbs/dish-from-school-pastal-nata.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-6",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (6)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-6.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-6.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-1",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (1)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-1.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-1.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-3",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (3)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-3.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-3.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-2",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (2)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-2.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-2.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-5",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (5)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-5.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-5.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-4",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (4)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-4.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-4.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-7",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (7)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-7.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-7.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11-3",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11 (3)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11-3.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11-3.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-19-36-8",
+    "title": "WhatsApp Image 2026-02-08 at 01.19.36 (8)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-19-36-8.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-19-36-8.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-22-37",
+    "title": "WhatsApp Image 2026-02-08 at 01.22.37",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-22-37.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-22-37.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-22-37-3",
+    "title": "WhatsApp Image 2026-02-08 at 01.22.37 (3)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-22-37-3.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-22-37-3.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-23-19-2",
+    "title": "WhatsApp Image 2026-02-08 at 01.23.19 (2)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-23-19-2.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-23-19-2.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-23-19",
+    "title": "WhatsApp Image 2026-02-08 at 01.23.19",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-23-19.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-23-19.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11-2",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11 (2)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11-2.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11-2.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11-1",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11 (1)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11-1.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11-1.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11-5",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11 (5)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11-5.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11-5.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11-4",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11 (4)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11-4.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11-4.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11-8",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11 (8)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11-8.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11-8.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-11-7",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.11 (7)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-11-7.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-11-7.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-23",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.23",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-23.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-23.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-12",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.12",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-12.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-12.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-25-02",
+    "title": "WhatsApp Image 2026-02-08 at 01.25.02",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-25-02.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-25-02.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-24-39",
+    "title": "WhatsApp Image 2026-02-08 at 01.24.39",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-24-39.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-24-39.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-26-16",
+    "title": "WhatsApp Image 2026-02-08 at 01.26.16",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-26-16.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-26-16.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-25-16",
+    "title": "WhatsApp Image 2026-02-08 at 01.25.16",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-25-16.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-25-16.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-28-12-2",
+    "title": "WhatsApp Image 2026-02-08 at 01.28.12 (2)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-28-12-2.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-28-12-2.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-27-22",
+    "title": "WhatsApp Image 2026-02-08 at 01.27.22",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-27-22.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-27-22.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-28-12",
+    "title": "WhatsApp Image 2026-02-08 at 01.28.12",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-28-12.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-28-12.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-30-21",
+    "title": "WhatsApp Image 2026-02-08 at 01.30.21",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-30-21.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-30-21.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-28-12-3",
+    "title": "WhatsApp Image 2026-02-08 at 01.28.12 (3)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-28-12-3.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-28-12-3.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-33-41",
+    "title": "WhatsApp Image 2026-02-08 at 01.33.41",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-33-41.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-33-41.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-30-21-1",
+    "title": "WhatsApp Image 2026-02-08 at 01.30.21 (1)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-30-21-1.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-30-21-1.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-30-21-2",
+    "title": "WhatsApp Image 2026-02-08 at 01.30.21 (2)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-30-21-2.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-30-21-2.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-34-37",
+    "title": "WhatsApp Image 2026-02-08 at 01.34.37",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-34-37.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-34-37.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-33-41-1",
+    "title": "WhatsApp Image 2026-02-08 at 01.33.41 (1)",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-33-41-1.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-33-41-1.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-34-24",
+    "title": "WhatsApp Image 2026-02-08 at 01.34.24",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-34-24.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-34-24.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-36-08",
+    "title": "WhatsApp Image 2026-02-08 at 01.36.08",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-36-08.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-36-08.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-01-34-57",
+    "title": "WhatsApp Image 2026-02-08 at 01.34.57",
+    "context": "Selected Work",
+    "tags": [
+      "selected-work"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-01-34-57.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-01-34-57.jpg"
+  },
+  {
+    "id": "cv-tayyaba",
+    "title": "CV tayyaba",
+    "context": "Profile",
+    "tags": [
+      "profile"
+    ],
+    "full": "assets/images/cv-tayyaba.jpg",
+    "thumb": "assets/images/thumbs/cv-tayyaba.jpg"
+  },
+  {
+    "id": "whatsapp-image-2026-02-08-at-16-15-53",
+    "title": "WhatsApp Image 2026-02-08 at 16.15.53",
+    "context": "Daily Service",
+    "tags": [
+      "daily-service",
+      "soup",
+      "rice-legumes"
+    ],
+    "full": "assets/images/whatsapp-image-2026-02-08-at-16-15-53.jpg",
+    "thumb": "assets/images/thumbs/whatsapp-image-2026-02-08-at-16-15-53.jpg"
+  },
+  {
+    "id": "salad-tomato",
+    "title": "salad tomato",
+    "context": "Daily Service",
+    "tags": [
+      "daily-service",
+      "cold-starter"
+    ],
+    "full": "assets/images/salad-tomato.jpg",
+    "thumb": "assets/images/thumbs/salad-tomato.jpg"
+  }
+];
+  </script>
+  <script>const manifest = window.__MANIFEST__ || [];
+const gallery = document.getElementById('gallery');
+const filters = document.querySelectorAll('[data-filter]');
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbTitle = document.getElementById('lbTitle');
+const lbCtx = document.getElementById('lbCtx');
+
+function prettyTitle(m){
+  const id = m.id;
+  if(id.includes('salad') || id.includes('tomato')) return 'Tomato Salad with Herb Dressing';
+  if(id.includes('2026-02-08-at-16-15-53') || id.includes('16-15-53')) return 'Chickpea & Rice Soup';
+  return m.title.replaceAll('_',' ').replaceAll('-',' ').trim();
+}
+
+function render(filter){
+  gallery.innerHTML = '';
+  const items = manifest.filter(m => {
+    if(m.context === 'Profile') return false;
+    if(filter === 'all') return true;
+    return m.context === filter;
+  });
+  items.slice(0, 24).forEach(m => {
+    const div = document.createElement('div');
+    div.className='tile';
+    div.innerHTML = `
+      <img src="${m.thumb}" alt="${m.title}">
+      <div class="cap">
+        <b>${prettyTitle(m)}</b>
+        <span>${m.context}</span>
+      </div>`;
+    div.addEventListener('click', () => openLB(m));
+    gallery.appendChild(div);
+  });
+}
+
+function openLB(m){
+  lbImg.src = m.full;
+  lbTitle.textContent = prettyTitle(m);
+  lbCtx.textContent = m.context;
+  lb.classList.add('open');
+}
+function closeLB(){ lb.classList.remove('open'); lbImg.src=''; }
+document.getElementById('lbClose').addEventListener('click', closeLB);
+lb.addEventListener('click', (e)=>{ if(e.target === lb) closeLB(); });
+
+filters.forEach(b=>{
+  b.addEventListener('click', ()=>{
+    filters.forEach(x=>x.classList.remove('active'));
+    b.classList.add('active');
+    render(b.dataset.filter);
+  });
+});
+
+render('all');</script>
+</body>
+</html>
